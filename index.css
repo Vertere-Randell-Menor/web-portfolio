@@ -1,0 +1,25 @@
+/*
+COLOR SCHEME
+--floral-white: #fffcf2ff;
+--pale-silver: #ccc5b9ff;
+--black-olive: #403d39ff;
+--eerie-black: #252422ff;
+--flame: #eb5e28ff;
+
+*/
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #fffcf2ff;
+	font-family: "Open Sans", sans-serif;
+}
+
+nav{
+	background-color: #ccc5b9ff;
+}
+
+nav .nav-link{
+	color: #252422ff;
+}
