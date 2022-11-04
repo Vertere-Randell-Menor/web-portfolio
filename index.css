@@ -4,7 +4,7 @@ COLOR SCHEME
 --pale-silver: #ccc5b9ff;
 --black-olive: #403d39ff;
 --eerie-black: #252422ff;
---flame: #eb5e28ff;
+--flame: #eb5e28ff; --not used out of place
 
 */
 html {
@@ -16,10 +16,102 @@ body{
 	font-family: "Open Sans", sans-serif;
 }
 
-nav{
+
+#navbar{
+	background-color: #403d39ff;
+}
+
+
+nav .nav-link{
+	color: #ccc5b9ff;
+}
+
+.card-holder{
+	background-color: #252422ff;		
+}
+
+.content-holder{
 	background-color: #ccc5b9ff;
 }
 
-nav .nav-link{
-	color: #252422ff;
+.landing-holder{
+	background-color: #fffcf2ff;	
 }
+
+#footer{
+	background-color: #403d39ff;	
+}
+
+#footer-label{
+	background-color: #252422ff;
+}
+
+.toolLogo-holder{
+	width: 200px;
+	height: 200px;
+	background-color: white;
+}
+
+
+/*CARD FLIP START*/
+
+.flip-card {
+	background-color: transparent;
+	width: 210px;
+	height: 210px;
+	perspective: 1000px;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+.flip-card:focus {
+	outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.flip-card-front {
+	background: linear-gradient(to left, #252422ff, #252422ff);
+	color: black;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flip-card-back {
+	background: linear-gradient(to right, #403d39ff, #403d39ff);
+	color: white;
+	transform: rotateY(180deg);
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+}
+.flip-card-back h3 {
+	font-size: 20px;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+/*CARD FLIP END*/
